@@ -3,7 +3,7 @@ version: 2
 models:
   - name: stg_customers
     description: one unique customer per row
-    columns: 
+    columns:
       - name: customer_id
         description: the primary key for stg_customers
         tests:

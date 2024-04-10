@@ -1,4 +1,4 @@
-{{ config(materialized="table") }} 
+{{ config(materialized="table") }}
 
 with
     customers as (select * from {{ ref("stg_jaffle_shop__customers") }}),

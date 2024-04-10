@@ -1,11 +1,7 @@
-<<<<<<< HEAD:models/dim_customers.sql
 {{ config(materialized="table") }} 
-=======
-
->>>>>>> 085d86af50b5304a186f5bc11b45cf2e7f333427:models/marts/core/dim_customers.sql
 
 with
-    customers as (select * from {{ ref("stg_customers") }}),
+    customers as (select * from {{ ref("stg_jaffle_shop__customers") }}),
 
     orders as (select * from {{ ref("fct_orders") }}),
 
